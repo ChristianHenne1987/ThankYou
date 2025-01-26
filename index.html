@@ -2,14 +2,151 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Title</title>
+        <title>Salary Comparison Platform</title>
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js"></script>
     </head>
     <body>
-        <h1 class="title">Thank you for participating in the Salary Comparison Platform. 
-        </h1>
+    <form action="https://formsubmit.co/christianhenne4@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://https://christianhenne1987.github.io/ThankYou/">
+     <h1>Salary Comparison Platform - Input Form</h1>
+        <div class="intro">
+        <h3>Purpose</h3>
+        <p>The purpose of the "Salary Comparison Project" is
+            to provide benchmarking data about salaries to all
+            participants. With this data each participant can
+            benchmark their own salary position and make an
+            informed decision for their own salary negotiation.</p>
+        </div>
+        <div class="intro">
+        <h3>How it works</h3>
+        <p>The collected data is based on voluntary data submission
+            of all participants. To provide data, please fill in the 
+            data below and send the material. Each person who has 
+            provided data within the last 2 years will be given access 
+            to the database, in which one can review the entire 
+            submitted data.</p>
+        </div>
+        <div class="intro">
+        <h3>Anonymity</h3>
+        <p>The data within the database will be anonymized. Meaning the 
+            "name" and the "email" of the data provider will not be visible 
+            to the rest of the group. Data marked as "actual" is provided
+            by the user about him-/herself. Data marked "estimated" is based
+            on information about third parties.</p>
+        </div>
+        <!--Admin Block-->    
+        <h3>Admin</h3>
+        <label for="FirstName">First name - not visible in database</label>
+        <input type="text" name="FirstName" id="FirstName">
+        <label for="LastName">Last name - not visible in the database</label>
+        <input type="text" name="LastName" id="LastName">
+        <label for="Email">Email - required for access - not visible in database</label>
+        <input type="email" name="Email" id="Email">
         <br>
-        <p>To access the Salary database please click <a href="https://docs.google.com/spreadsheets/d/1WOQ2HOP2moQKSDTSx0Ao1xpz_ntTRWUOT5r9HcdPYn0/edit?usp=sharing">here</a>.<br>(You will have to request access the first time).</p>
+        <br>
+        <h3>Position Context</h3>
+        <label for="ContractYear">Year of contract signature/salary adjustment</label>
+        <input type="number" name="ContractYear" id="ContractYear" placeholder="Please enter the year in which you have signed either the contract or received the salary adjustment">
+        <label for="Industry">Industry</label>
+        <input type="text" name="Industry" id="Industry" placeholder="E.g. offshore wind, onshore wind, solar, PtX, etc.">
+        <label for="EmployerType">Employer Type</label>
+        <select id="EmployerType" name="EmployerType">
+           <option value="">Please select</option>
+           <option value="1">Developer</option> 
+           <option value="2">Equipment Manufacturer</option>
+            <option value="3">Consultant</option>
+            <option value="4">Governmental Authority</option>
+            <option value="5">Other</option>
+        </select>
+        <label for="EmployerName">Name of Employer</label>
+        <input type="text" id="EmployerName" name="EmployerName">
+        <label for="Department">Department</label>
+        <select id="Department" name="Department">
+            <option value="">Please select</option>
+            <option value="1">Sales</option>
+            <option value="2">Strategy</option>
+            <option value="3">Business Case</option>
+            <option value="4">Engineering</option>
+            <option value="5">Business Development</option>
+            <option value="6">Procurement</option>
+            <option value="7">Other</option>
+        </select>
+        <label for="Seniority">Seniority</label>
+        <input type="text" id="Seniority" name="Seniority" placeholder="e.g. analyst, manager, director, VP, etc.">
+        <label for="PeopleResponsibility">Do you have people responsibility?</label>
+        <select id="PeopleResponsibility" name="PeopleResponsibility">
+            <option value="">Please select</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select>
+        <label for="NonCompetition">Do you have a Non Competition Clause in your contract?</label>
+        <select id="NonCompetition" name="NonCompetition">
+            <option value="">Please select</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select>
+        <label for="NonCompetitionCompensation">What is the compensation during your Non Competition Clause?</label>
+        <select id="NonCompetitionCompensation" name="NonCompetitionCompensation">
+            <option value="">Please select</option>
+            <option value="1">1 month</option>
+            <option value="2">2 months</option>
+            <option value="3">3 months</option>
+            <option value="4">4 months</option>
+            <option value="5">5 months</option>
+            <option value="6">6 months</option>
+            <option value="7">more than 6 months</option>
+            <option value="8">N/A</option>
+        </select>
+        <label for="TotalExperience">How many years of total work experience do you have?</label>
+        <input type="number" id="TotalExperience" name="TotalExperience">
+        <label for="RelevantExperience">How many years of relevant work experience do you have for this contract?</label>
+        <input type="number" id="RelevantExperience" name="RelevantExperience">
+        <label for="Gender">Gender</label>
+        <select id="Gender" name="Gender">
+            <option value="">Please select</option>
+            <option value="1">male</option>
+            <option value="2">female</option>
+            <option value="3">I do not want to share</option>
+        </select>
+        <label for="AcademicTitle">Highest academic title</label>
+        <select id="AcademicTitle">
+            <option value=""></option>
+            <option value="1">Bachelor</option>
+            <option value="2">Master</option>
+            <option value="3">MBA</option>
+            <option value="4">PhD</option>
+        </select>
+        <h3>Salary Data</h3>
+        <label for="BaseSalary">Annual base salary (in dkk)</label>
+        <input type="number" id="BaseSalary" name="BaseSalary">
+        <label for="AnnualBonus">Annual Bonus (in %)</label>
+        <input type="number" id="AnnualBonus" name="AnnualBonus">
+        <label for="Ferietillag">Ferietillæg in (%)</label>
+        <input type="number" id="Ferietillag" name="Ferietillag">
+        <label for="Pension">Pension Contribution of Employer (in%)</label>
+        <input type="number" id="Pension" name="Pension">
+        <h3>Other types of compensation</h3>
+        <label for="ParentalLeave">Duration of parental leave</label>
+        <select id="ParentalLeave" name="ParentalLeave">
+            <option value="">Please select</option>
+            <option value="1">1 month</option>
+            <option value="2">2 months</option>
+            <option value="3">3 months</option>
+            <option value="4">4 months</option>
+            <option value="5">5 months</option>
+            <option value="6">6 months</option>
+            <option value="7">more than 6 months</option>
+            <option value="8">N/A</option>
+        </select>
+        <label for="ParentalPay">Payment during parental leave (in % of base salary)</label>
+        <input type="number" id="ParentalPay" name="ParentalPay">
+        <label for="Comments">Any additional comments about your contractual situation?</label>
+        <textarea rows="5" cols="70"></textarea>
+        <label for="Permission">By submitting this infomration I give the permission that my data is inserted in the Salary Comparison Platform and thus that it is visible to all participating member.</label>
+        <input type="checkbox" id="Permission" name="Permission" required>
+        <input type="submit" value="submit">
+    </form>
     </body>
 </html>
